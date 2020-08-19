@@ -9,7 +9,7 @@ public class Sort {
    * @param array The array to be sorted.
    */
   private static void sort(String[] array) {
-    // YOUR CODE WILL GO HERE.
+    array[0] = "hello";
   }
 
 
