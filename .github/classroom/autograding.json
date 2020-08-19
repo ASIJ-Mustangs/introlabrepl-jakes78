@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "in1",
+      "setup": "",
+      "run": "gradle TestSort",
+      "input": "5",
+      "output": "10",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
