@@ -8,8 +8,8 @@ public class Sort {
    * DO NOT MODIFY THIS METHOD SIGNATURE.
    * @param array The array to be sorted.
    */
-  private static void sort(String[] array) {
-    array[0] = "hello";
+  private static int sort() {
+    return 10;
   }
 
 
@@ -33,33 +33,6 @@ public class Sort {
 
 
   public static void main(String[] args) throws IOException {
-    String[] prefixes = {"small", "medium", "large"};
-    String[] suffixes = {"ascending.txt", "descending.txt", "random.txt"};
-    for (String prefix : prefixes) {
-      for (String suffix : suffixes) {
-        String filename = prefix + "_" + suffix;
-        String[] array = load(filename);
-        long start, end;
-
-        System.out.println("Sorting " + filename + " with " + array.length + " words");
-
-        String[] copy = Arrays.copyOf(array, array.length);
-        start = System.currentTimeMillis();
-        Arrays.sort(copy);
-        end = System.currentTimeMillis();
-        System.out.println("\tArrays.sort() took:\t" + (end - start) + " ms");
-
-        start = System.currentTimeMillis();
-        sort(array);
-        end = System.currentTimeMillis();
-        if (Arrays.equals(array, copy)) {
-          System.out.println("\tYour sort method took:\t" + (end - start) + " ms");
-        } else {
-          System.err.println("\tYour sort does not properly sort the array in ascending order!");
-        }
-
-        System.out.println();
-      }
-    }
+    System.out.print(sort());
   }
 }
