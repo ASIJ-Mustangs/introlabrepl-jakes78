@@ -34,6 +34,6 @@ public class Sort {
 
 
   public static void main(String[] args) throws IOException {
-    sort();
+    System.out.println(10);
   }
 }
