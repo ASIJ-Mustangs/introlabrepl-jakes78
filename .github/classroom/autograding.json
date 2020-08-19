@@ -3,7 +3,7 @@
     {
       "name": "in1",
       "setup": "",
-      "run": "run = \"javac Sort.java && java Sort\"",
+      "run": "\"javac Sort.java && java Sort\"",
       "input": "5",
       "output": "10",
       "comparison": "included",
